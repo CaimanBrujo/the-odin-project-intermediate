@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1f1f1f;
+}
+
+.container{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.imgback{
+    background: url('assets/images/topography\ 2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #151515;
+    width: 30vw;
+    max-width: 30%;
+    height: 100vh;
+    margin: 1% 0 1% 1%;
+    background-size: cover;
+}
+
+.right{
+    width: 70vw;
+    height: 100vh;
+    max-width: 70%;
+    margin: 1% 1% 1% 0;
+    background-color: #151515;
+}

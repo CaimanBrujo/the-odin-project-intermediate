@@ -38,7 +38,7 @@ main{
     background-color: yellow;
 }
 
-.sidebar{
+aside{
     grid-area: sidebar;
     background-color: gray;
 }

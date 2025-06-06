@@ -19,15 +19,17 @@ html{
 }
 
 body{
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: var(--back-black);
     color: var(--white);
 }
 
 .main-grid{
+    height: 100%;
     display: grid;
     grid-template-columns: 1.2fr 4fr 1.5fr;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
     "dashboard header header"
     "dashboard main sidebar";

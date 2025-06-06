@@ -106,23 +106,21 @@ header{
     display: flex;
     align-items: center;
     gap: 5px;
+    transition: transform var(--transition-fast);
 }
 
 .search-bar-input{
     width: 500px;
-    height: 25px;
+    height: 30px;
     border-radius: 15px;
     background-color: var(--gray-medium);
     color: var(--white);
     padding-left: 10px;
+    transition: border var(--transition-fast);
 }
 
 .search-bar-input::placeholder{
     color: var(--white);
-}
-
-.searchbar{
-    transition: transform var(--transition-fast);
 }
 
 .searchbar:focus-within,
@@ -134,7 +132,6 @@ header{
     outline: none;
     box-shadow: none;
     border: 1px solid var(--white);
-    -webkit-appearance: none;
 }
 
 main{

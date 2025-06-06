@@ -326,3 +326,11 @@ aside{
 .trending-text{
     font-size: 0.8rem;
 }
+
+/* LINK TO SIGN UP FORM */
+.link-to-signp-up-form,
+.link-to-signp-up-form:visited,
+.link-to-signp-up-form:active{
+    color: var(--white);
+    text-decoration: none;
+}

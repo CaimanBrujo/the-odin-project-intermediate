@@ -9,12 +9,13 @@ html{
 }
 
 body{
-    background-color: #222222;
+    background-color: #1f1f1f;
+    color: #ececec;
 }
 
 .main-grid{
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr; 
+    grid-template-columns: 200px 8fr 1fr; 
     grid-template-rows: 1fr 9fr;
     grid-template-areas:
     "dashboard header header"
@@ -25,7 +26,7 @@ body{
 
 .dashboard-container{
     grid-area: dashboard;
-    background-color: blue;
+    background-color: #181818;
 }
 
 .header-container{

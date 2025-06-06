@@ -14,7 +14,6 @@
     --scale-hover: 1.05;
 }
 
-
 html{
     height: 100%;
 }
@@ -38,7 +37,7 @@ body{
 /* DASHBOARD */
 .dashboard-container{
     grid-area: dashboard;
-    background-color: #181818;
+    background-color: var(--gray-dark);
     padding: 25px;
 }
 
@@ -53,12 +52,12 @@ li{
     height: 35px;
     gap: 8px;
     text-decoration: none;
-    color: #ececec;
-    transition: transform 0.2s ease;
+    color: var(--white);
+    transition: transform var(--transition-fast);
 }
 
 .dash-item:hover{
-    transform: scale(1.05);
+    transform: scale(var(--scale-hover));
 }
 
 .dash-item-big:hover{
@@ -68,7 +67,7 @@ li{
 .dash-icon{
     width: 20px;
     height: 20px;
-    fill: #ececec;
+    fill: var(--white);
 }
 
 .icon-text{
@@ -93,6 +92,49 @@ li{
 .header-container{
     grid-area: header;
     background-color: var(--gray-light);
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    padding: 25px 50px;
+    row-gap: 20px;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar-input{
+    width: 500px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: var(--gray-medium);
+    color: var(--white);
+    padding-left: 10px;
+}
+
+.search-bar-input::placeholder{
+    color: var(--white);
+}
+
+.searchbar{
+    transition: transform var(--transition-fast);
+}
+
+.searchbar:focus-within,
+.searchbar:hover{
+    transform: scale(var(--scale-hover));
+}
+
+.search-bar-input:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--white);
+    -webkit-appearance: none;
 }
 
 main{

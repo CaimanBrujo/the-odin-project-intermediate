@@ -4,13 +4,24 @@
     box-sizing: border-box;
 }
 
+:root{
+    --gray-light: #454545;
+    --gray-medium: #323232;
+    --gray-dark: #181818;
+    --back-black: #030303;
+    --white: #ececec;
+    --transition-fast: 0.2s ease;
+    --scale-hover: 1.05;
+}
+
+
 html{
     height: 100%;
 }
 
 body{
-    background-color: #1f1f1f;
-    color: #ececec;
+    background-color: var(--back-black);
+    color: var(--white);
 }
 
 .main-grid{
@@ -43,6 +54,15 @@ li{
     gap: 8px;
     text-decoration: none;
     color: #ececec;
+    transition: transform 0.2s ease;
+}
+
+.dash-item:hover{
+    transform: scale(1.05);
+}
+
+.dash-item-big:hover{
+    transform: none;
 }
 
 .dash-icon{
@@ -68,26 +88,19 @@ li{
     height: 50px;
 }
 
-.dash-item:hover{
-    text-decoration: underline;
-}
-
-.dash-item-big:hover{
-    text-decoration: none;
-}
 
 /* HEADER */
 .header-container{
     grid-area: header;
-    background-color: red;
+    background-color: var(--gray-light);
 }
 
 main{
     grid-area: main;
-    background-color: yellow;
+    background-color: var(--gray-medium);
 }
 
 aside{
     grid-area: sidebar;
-    background-color: gray;
+    background-color: var(--gray-medium);
 }
